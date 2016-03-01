@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/forkeys/forkeys-benchmark.git"
   },
-  "author": "",
+  "author": "James Monger <jameskmonger@hotmail.co.uk> (http://jamesmonger.com)",
   "license": "Unlicense",
   "bugs": {
     "url": "https://github.com/forkeys/forkeys-benchmark/issues"
