@@ -48,6 +48,8 @@ for (let i = 0; i < SUITE_COUNT; i++) {
             results[event.target.name].push(event.target.hz);
         })
         .on('complete', function() {
+            console.log(`Cycle ${i} complete`);
+
             if (i === SUITE_COUNT) {
                 console.log(results);
             }
