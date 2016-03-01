@@ -46,6 +46,8 @@ for (let i = 0; i < SUITE_COUNT; i++) {
         })
         .on('cycle', function(event) {
             results[event.target.name].push(event.target.hz);
+
+            console.log(`[${i}]: ${event.target.name}`);
         })
         .on('complete', function() {
             console.log(`Cycle ${i} complete`);
