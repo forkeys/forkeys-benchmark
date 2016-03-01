@@ -2,7 +2,7 @@ const Benchmark = require('benchmark');
 const forkeys = require('forkeys');
 const forkeys_c = require('forkeys-compat');
 
-var testObject = {
+const testObject = {
     first_key: 'blablabla',
     second: 3,
     third: 1983,
