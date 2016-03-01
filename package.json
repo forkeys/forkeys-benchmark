@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/forkeys/forkeys-benchmark#readme",
   "dependencies": {
-    "benchmark": "^2.1.0"
+    "benchmark": "^2.1.0",
+    "forkeys": "^1.0.1"
   }
 }
