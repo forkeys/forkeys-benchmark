@@ -4,4 +4,4 @@ Benchmarking for [forkeys](http://github.com/forkeys/forkeys) and [forkeys-compa
 
 ## License
 
-[The Unlicense](http://unlicense.org)
+[The Unlicense](http://unlicense.org) (see [distributed LICENSE file](/LICENSE))
