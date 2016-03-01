@@ -1,5 +1,4 @@
 var Benchmark = require('benchmark');
-var suite = new Benchmark.Suite();
 
 var forkeys = require('forkeys');
 var forkeys_c = require('forkeys-compat');
@@ -19,25 +18,29 @@ var testObject = {
     ]
 };
 
-var testedKeys = [];
+var results = [];
 
-var testFunction = function(key) {
-    testedKeys.push(key);
-};
+var suite = new Benchmark.Suite;
 
 suite
     .add('forkeys(a, b)', function() {
-        forkeys(testObject, testFunction);
+        forkeys(testObject, function(key) {
+            // dummy functionality here
+        });
     })
     .add('forkeys-compat(a, b)', function() {
-        forkeys_c(testObject, testFunction);
+        forkeys_c(testObject, function(key) {
+            // dummy functionality here
+        });
     })
     .add('Object.keys(a).forEach(b)', function() {
-        Object.keys(testObject).forEach(testFunction);
+        Object.keys(testObject).forEach(function(key) {
+            // dummy functionality here
+        });
     })
     .on('cycle', function(event) {
-        console.log(String(event.target));
+        console.log(event.target.name + ": " + event.target.hz);
     })
     .run({
-        minSamples: 250
+        async: true
     });
