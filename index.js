@@ -1,7 +1,6 @@
-var Benchmark = require('benchmark');
-
-var forkeys = require('forkeys');
-var forkeys_c = require('forkeys-compat');
+const Benchmark = require('benchmark');
+const forkeys = require('forkeys');
+const forkeys_c = require('forkeys-compat');
 
 var testObject = {
     first_key: 'blablabla',
