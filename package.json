@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/forkeys/forkeys-benchmark/issues"
   },
-  "homepage": "https://github.com/forkeys/forkeys-benchmark#readme"
+  "homepage": "https://github.com/forkeys/forkeys-benchmark#readme",
+  "dependencies": {
+    "benchmark": "^2.1.0"
+  }
 }
