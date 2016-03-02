@@ -4,11 +4,11 @@ Benchmarking for [forkeys](http://github.com/forkeys/forkeys) and [forkeys-compa
 
 ## Results
 
-Function | Ops/sec | % faster than slowest
+Function | Ops/sec | % of slowest
 --- | --- | ---
-`forkeys(a, b)` | 687,027 |
-`forkeys-compat(a, b)` | 675,891 |
-`Object.keys(a).forEach(b)` | 639,125 |
+`forkeys(a, b)` | 687,027 |  107.494 %
+`forkeys-compat(a, b)` | 675,891 | 105.753 %
+`Object.keys(a).forEach(b)` | 639,125 | 100.000 %
 
 ## Outputs
 
