@@ -8,7 +8,7 @@ Function | Ops/sec | % faster than slowest
 --- | --- | ---
 `forkeys(a, b)` | 687,027 |
 `forkeys-compat(a, b)` | 675,891 |
-`Object.keys(a).forEach(b)` | 639,124 | 
+`Object.keys(a).forEach(b)` | 639,125 |
 
 ## Outputs
 
