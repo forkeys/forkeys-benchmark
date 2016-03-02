@@ -52,11 +52,12 @@ for (let i = 0; i < SUITE_COUNT; i++) {
         .on('complete', function() {
             console.log(`Cycle ${i} complete`);
 
-            if (i === SUITE_COUNT) {
-                console.log(results);
+            if (i === SUITE_COUNT - 1) {
+                for (let key in results) {
+                    let average = results[key].map(function(x,i,arr){return x/arr.length}).reduce(function(a,b){return a + b});
+                    console.log(`${key}: ${average}`);
+                }
             }
         })
-        .run({
-            async: true
-        });
+        .run();
 }
