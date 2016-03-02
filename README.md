@@ -18,6 +18,8 @@ The results above are benchmarked with [Benchmark.js](http://benchmarkjs.com) on
     forkeys-compat(a, b): 675891.2375011845
     Object.keys(a).forEach(b): 639124.5415610641
 
+The results above are benchmarked with [Benchmark.js](http://benchmarkjs.com) on an [ASUS X500D Notebook](http://techno-flashnews.blogspot.co.uk/2014/12/review-asus-x550d-new.html) (4GB RAM, quad-core 2.5 GHz).
+
 ## License
 
 [The Unlicense](http://unlicense.org) (see [distributed LICENSE file](/LICENSE))
